@@ -31,13 +31,13 @@ spec:
             - name: VERSION
               value: "LATEST"
             - name: MEMORY
-              value: "4G"
+              value: "20G"
           resources:
             requests:
-              memory: "4Gi"
+              memory: "20Gi"
               cpu: "1000m"
             limits:
-              memory: "6Gi"
+              memory: "24Gi"
               cpu: "2000m"
           volumeMounts:
             - mountPath: /data
