@@ -3,11 +3,12 @@ kind: Service
 metadata:
   name: minecraft-svc
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - name: minecraft
       port: 25565
       targetPort: 25565
+      nodePort: 30565
       protocol: TCP
   selector:
     app: minecraft
